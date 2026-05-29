@@ -26,6 +26,14 @@
                                     <option value="procesador">Procesador Inter Core I7</option>
                                     <option value="ram">Memoria RAM 16GB DDR5</option>
                                     <option value="almacenamiento">Unidad SSD NVMe 1TB</option>
+                                    <option value="mouse">Mouse Inalámbrico Logitech</option>
+                                    <option value="audifonos">Audífonos Gamer Over-Ear</option>
+                                    <option value="teclado">Teclado Mecánico RGB</option>
+                                    <option value="monitor">Monitor 4K 27 pulgadas</option>
+                                    <option value="webcam">Webcam Full HD 1080p</option>
+                                    <option value="microfono">Micrófono Condensador USB</option>
+                                    <option value="hub">Hub USB 3.0 7 Puertos</option>
+                                    <option value="cargador">Cargador Rápido USB-C 65W</option>
                                 </select>
                             </div>
                             <div class="mb-3">
@@ -33,11 +41,28 @@
                                 <input type="number" class="form-control" id="cantidad" name="cantidad" min="1"
                                     required>
                             </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="institucional" name="institucional"
-                                    value="1">
-                                <label class="form-check-label" for="institucional">Aplica descuento institucional
-                                    (10%)</label>
+                            <div class="mb-3">
+                                <label class="form-label">Selecciona el descuento:</label>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="descuento0" name="descuento" value="0" checked>
+                                    <label class="form-check-label" for="descuento0">Sin descuento (0%)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="descuento15" name="descuento" value="15">
+                                    <label class="form-check-label" for="descuento15">Descuento del 15%</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="descuento20" name="descuento" value="20">
+                                    <label class="form-check-label" for="descuento20">Descuento del 20%</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="descuento25" name="descuento" value="25">
+                                    <label class="form-check-label" for="descuento25">Descuento del 25%</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="descuento50" name="descuento" value="50">
+                                    <label class="form-check-label" for="descuento50">Descuento del 50%</label>
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Procesar Cotización</button>
                         </form>
